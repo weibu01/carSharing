@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d3f6f3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="身份信息审核"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/btn_choose_picture1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/camera"
+        android:text="step1:请上传您身份证的正反面照片"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:background="#94ed74"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"/>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_show_id1"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:background="#FFFFFF"/>
+        <ImageView
+            android:id="@+id/iv_show_id2"
+            android:layout_marginStart="10dp"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:background="#FFFFFF"
+            android:layout_toEndOf="@+id/iv_show_id1"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_choose_picture2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/camera"
+        android:text="step2:请上传您的驾驶证照片（参考右侧图片）"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:background="#94ed74"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"/>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_show_drivingLicence1"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:background="#FFFFFF"/>
+        <ImageView
+            android:id="@+id/iv_show_drivingLicence2"
+            android:layout_marginStart="10dp"
+            android:background="#FFFFFF"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:layout_toEndOf="@+id/iv_show_drivingLicence1"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:text="上传图片"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#91bbd8"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="图片审核中..."
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="25dp"
+        android:text="开始用车"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#91bbd8"/>
+
+
+</LinearLayout>

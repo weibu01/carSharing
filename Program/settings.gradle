@@ -1,0 +1,1 @@
+include ':app', ':carsharing', ':gainpicture', ':photofunction', ':mypermission', ':testdemo', ':androidtcp', ':tcpclient', ':tcpclienttest'

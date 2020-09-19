@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TcpClient</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="con_success">连接成功</string>
+    <string name="con_failed">连接失败</string>
+</resources>

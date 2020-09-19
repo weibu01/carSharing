@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/map"
+        android:scaleType="fitXY"
+        android:layout_weight="1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_plate_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入共享汽车车牌号"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_plate_number"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:hint="30分钟 2元"
+            android:layout_toEndOf="@+id/et_plate_number"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/bt_use_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我要用车"
+            android:textSize="20sp"
+            android:layout_marginEnd="60dp"
+            android:textColor="#FFFFFF"
+            android:background="#849fd1"/>
+        <Button
+            android:id="@+id/bt_return_car"
+            android:layout_toRightOf="@+id/bt_use_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我要还车"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="#849fd1"/>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
